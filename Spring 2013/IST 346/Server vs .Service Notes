@@ -1,0 +1,135 @@
+Server- somthing that provides a service
+
+Unifing a set of workstations into a distributed computing environment, since they share common resources
+
+typical environments have several services, and services often depend on other services
+
+some services are simple, and have no interaction's on the user's part
+
+it is best to think about any given service in terms of it components and interdependicies
+
+Protocols- Instructions for transferring data to/from client/server- HTTP, WebDav, SMTP
+
+Component- Client and server software part of the application or service interaction- Web Browsers, Apache Web Server, PHP scripting, MySQL Database
+
+API(Application Programming Interface)- rules for accessing or extending the service beyond the components, XML-RPC, Atom, RSS, JSON
+
+Services at the application level depend on lower-level services for their operation
+
+Complex interface, several protocols - basic interface with underlying protocol - essential to all other services, minimal interface
+
+Core
+	NTP-
+	DNS-
+	DHCP-
+	LDAP-
+	Kerberos-
+
+Network- 
+	HTTP-
+		SSL-
+	SMB/CIFS-
+	SSH/SCP-
+	NFS-
+	RDP-
+	SMTP-
+
+Cloud computing is an extension of the service model to the ubiqiuties if the internet
+
+Infrastructure as a Service-
+Platform as a Service-
+Software as a Service-
+
+Providing a Service- defined, reliable, scalable, monitored, maintained, supported
+
+Customers are the erason for your service
+	How will they use it?
+	What features do they need
+	how critical is this service
+	what are the required levels of availability and support
+
+Formulate a SLA
+	This will define the service being offered
+	clarify the expectations for support levels adn response time
+
+Keep it simple
+	simple systems are more reliable and easier to maintain
+	make the trade-off between efatures and reliability
+	use reliable hardware, of course
+
+Take advantage of vendor relationships
+	have them provide recommendations
+	let multiple vendors compete for your business
+	choose a vendor based on not only features but the stability of their company and product
+
+Use open architecture
+	Open protocol standards and file formats
+	RFC's from the IETF
+	Pros
+		-bigger selection of products adn vendors to choose from
+		-decoupled client and server selection
+		-avoids being locked in to a specific platform
+
+	Con
+		-somteimes open standards dont go far enough
+
+	Google-Worthy
+	Service-Oriented Architecture is changing that game a bit, as most service are gravitating towards interoperability
+
+Service has 3 environments
+	-production: primary environment for service
+	-development: where you build out new features for the service/ upgrades
+	-test: mirror of prod for testing
+
+Scalabilty
+	-a service's ability to grow with it's demand
+	-helps maintain performance levels
+	-you should try to plan for scalability when designing your service
+	-two types of scalability:
+		-vertical- incerasing the size of node
+		-horizontal- adding more nodes to service
+
+How to scale apps:
+	-application partitioning
+	-Data/ HTML caching
+	-indexing data
+	-data partitioning
+	-denormalization
+	-monitor closely and react accordingly
+
+Layered monitoring- PPS
+	Ping- monitor the host
+	Port- moitor the port for the service
+	Service- connect to the port, verify the response
+
+A monitoring agent should send an alert to the IT team when things arent right
+	-without adequate monitoring you cannot offer good service
+
+Service monitoring- observing the service activity in real time done by a computer not a human, important events are passes onto human
+Service logging- keeping historical records of service activity, this data grows over time aand can become quite large, only referred to a problem or face down a security 						incident
+
+Why monitor- to detect/ identify problems quickly, ideally you want to know about it before you users do, to determine if resources are being constrained or over utilized
+	-monitor for a condition
+	-send alert when the condition is met
+	-log the condition whether it sends and alert or not
+
+Normal- when service fails to send an alert
+Proactive monitoring- when a service shows sign it is bout to fails you send an alert
+Automated response-
+
+Alerts-
+	-Email
+	-TXT msg
+	-SMS
+	-automated dialer call phone
+
+Pick appropriate alert for event and time
+
+Logging- Log file rotation- service points to 
+
+Yes, there will come a time when you will need to deny service
+plan and advertise your service outages so your users can plan accordingly
+make sure your outage complies with your TOS
+
+Supporting- documents how service should be used adn maintained by IT staff, roll out using "one-some-many"
+

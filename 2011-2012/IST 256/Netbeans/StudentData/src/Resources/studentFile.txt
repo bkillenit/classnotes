@@ -1,0 +1,10 @@
+Alex,M,20,73,Dellplain Hall,326
+Sarah,F,23,67,Brewster Hall,101
+Saydah,F,21,63,Flint Hall,424
+Thanis,M,19,73,Boland Hall,414
+Xavier,M,18,69,Boland Hall,617
+Annis,F,21,64,Shaw Hall,117
+Dexter,M,20,67,Day Hall,520
+Antwon,M,21,71,Brockway Hall,122
+Derrell,M,22,73,Lyons Hall,315
+Claudia,F,18,66,Watson Hall,115

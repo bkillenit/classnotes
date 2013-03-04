@@ -1,0 +1,9 @@
+Lands End,national,340,both,1200,950,1175
+Dinosaur Bar-B-Que,local,30,google,250,400,0
+Freedom of Expresso,local,20,yahoo,300,575,250
+Koto,national,300,google,65,700,55
+McDonalds,both,350,yahoo,250,475,500
+Macys,both,450,both,350,460,230
+Sakana Ya,local,110,yahoo,110,100,140
+Golf Galaxy,both,300,both,210,30,400
+Dominics,national,25,google,25,50,200

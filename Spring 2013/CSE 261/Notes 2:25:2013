@@ -1,0 +1,37 @@
+Objective:
+Reinforce Shannons expansion and multiplexer design
+Relook at adder and subtracters
+Carry propogate and generate
+
+Shannons Expansion
+
+  \ x1x0
+  	_______________________
+x2 |_____|__0__|__0__|__0__|
+   |_____|_____|__0__|_____|     f(x2, x1, x0) = (X1' + X0')(X2 + X0')(X2 + X1')
+
+ 
+ ________
+| 0 1 2 3|           s1s0 = x2x1
+|________| <---- Z  
+   |
+   V                 x2 = x1 = 0
+   f                 f(0, 0, x0) 
+
+(1)(1)(1 + x0') = 1
+
+Adder/Subtractor
+
+Recall the full Adder
+
+	  _____      X  Y  C |  Co S
+	 |     |     0  0  0 |  0  0
+ <---|_____|     0  0  1 |  0  1
+                 0  1  0 |  0  1
+                 0  1  1 |  1  0
+                 1  0  0 |  0  1
+                 1  0  1 |  1  0
+                 1  1  0 |  1  0
+                 1  1  1 |  1  1
+
+S= X +* y +* C1

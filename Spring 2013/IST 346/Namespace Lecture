@@ -1,0 +1,114 @@
+A namespace consists of:
+	A set of defined and named keys
+	the attributes associated with each of the keys
+
+Type of namespaces
+	Computer names
+	email addresses
+	printers
+	service names
+	IP addresses user accounts
+
+Types of namespaces
+	Flat
+		-no duplicates can exist
+		-SU NetID
+		-user accounts are a flat namspace
+
+	Hierarchical
+		-namespace is organized in a tree
+		-duplicates can exist at nodes in the tree, but the overall name is globally unique
+		-DNS is an example of such namespace
+
+Namespace Policy
+	-consistent namespaces make everyone's job easier
+	-helps your users and admins find resources
+	-a well-governed policy is the key to a consistent and reliable namespace
+	-the policy should have collision prevention for flat namespaces
+	-once you decide on a naming convention, it is difficult to change it
+	-if there's one thing you should do by committee its namespace policy creation
+	-ITS-PRinter-MH250-01
+
+Issues surrounding namespaces
+	-Protection
+	-Longevity
+	-Scope
+	-Naming convention
+
+Naming Conventions
+	Formulaic, Themeatic, Functional, Descriptive, No Method, Applied uses are usually a combination of multiple approaches
+
+Meta-directory
+	Unified database of namespaces
+	To create a named key for namespace
+		-the information is added to meta-directory
+		-the account is provisiond from the meta-directory to the resource itself
+	Are namespace management
+		-you can buy identity management software to implement a meta-directory or build your own
+		-these solutions require a lot fo planning, deesign and testing
+
+Directory 101
+	Direcstory
+		-a collection of information that is primarily searched and read, but rarely modified
+		-named keys from namespace are idael storage candidates for directories
+
+	Directory Service
+		-provides access to direcotry information
+
+	Directory Server
+		-application that provides a directory service
+
+	Note:
+		-Directories are not Meta-directories. Directories store named keys, but do not provision them
+
+LDAP(Lightweight Directory Access Protocol)
+	lightweight version of the DAP based on the X.500 directories
+	just access protocol, bot direcotry itself
+	the directory must be implemented on server end
+
+	Directory services which implement LDAP
+		-Open LDAP
+		-Fedora Directory Server
+
+	Structure
+		-Hierachal structure
+			-containers are called organizational units
+		-An LDAP directory is made of entries
+			-entries may be employee records, hosts, accounts etc.
+		-Each entry consists of attributes
+			-names, phone numbers, etc.
+			-objectClass attrbiute identifies schema
+			-Schema determines available entry
+		-Each attribte is a type/value pair
+			-type is label for the information stored
+			-value is value for attr.
+			-attr. can be multi valued
+
+LDAP DN
+	distinguished name represents the path from the root directory to the entry
+
+LDAP Authentication
+	Anonymous authentication- binds with empty DN and password
+	Simple auth- binds with DN and password
+	Simple auth over SSL/TLS- use SSL to encrypt simple auth
+	Simple auth and security layer- SASL is an extensible security measure scheme
+
+Active Directory
+	Active Directory service
+	used to manage users and computers on the enterprise
+	hiearchy: forest, trees, domains
+	namespace is flat at the domain level
+	AD implemented for user, group, computer, policies, and more
+	Kerberos used for computers on the domain and user logons
+	DNS is used for naming computers on the domain
+
+Documentation
+	Process of keeping records for the purpose of referencing information at a later time or for use by others
+	What should be documents?
+		-what you need later in time
+		-dont try to document everything
+		-dont overcomplicate documentation
+	What- complex procedures, screen captures, source code
+	How- templates, tools
+	Why- train other staff, eliminate songle-person dependencies, reduce support calls, justify need for additional staff
+	Create a document template for similar types of documentation	 

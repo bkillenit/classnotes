@@ -1,0 +1,5 @@
+Mountain,Adams,40,B&W 
+Workers,Salgado,31,B&W 
+Flower,Mapplethorpe,25,Color 
+Baseball,Allen,200,Color 
+Woman,Lange,38,B&W

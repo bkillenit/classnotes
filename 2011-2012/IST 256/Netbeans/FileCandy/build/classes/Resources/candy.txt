@@ -1,0 +1,6 @@
+Anusha,Snickers,5
+Hassan,KitKat,2
+Jamilla,Reese's Cup,3
+Megan,Snickers,1
+Tanner,Milky Way,4
+William,Snickers,1
